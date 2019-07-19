@@ -1,1 +1,16 @@
 // Mixins Here
+
+.displayFlex(@flex-direction:row) {
+    display: flex;
+    flex-direction: @flex-direction;
+}
+
+.buttonStyle(@bg-color, @font-color) {
+    background-color: @bg-color;
+    color: @font-color;
+}
+
+.imgScale() {
+    width: 100%;
+    height: auto;
+}

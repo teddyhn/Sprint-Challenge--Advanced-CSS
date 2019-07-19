@@ -1,1 +1,29 @@
 // Navigation code here
+
+.navigation {
+    .displayFlex(column);
+    align-items: center;
+    padding: 15px 0;
+    background-color: fade(@wild-sand, 90%);
+    color: @river-bend;
+    border-bottom: 1px solid @sea-shell;
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    .nav-bar {
+        .displayFlex;
+        justify-content: space-between;
+        width: 52%;
+
+        @media @phone {
+            width: 80%;
+        }
+    }
+}
+
+.nav-wrapper {
+    position: fixed;
+    width: 100%;
+  }
