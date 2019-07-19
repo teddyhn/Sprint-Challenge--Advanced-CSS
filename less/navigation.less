@@ -4,7 +4,7 @@
     .displayFlex(column);
     align-items: center;
     padding: 15px 0;
-    background-color: @wild-sand;
+    background-color: fade(@wild-sand, 90%);
     color: @river-bend;
     border-bottom: 1px solid @sea-shell;
 
@@ -15,10 +15,15 @@
     .nav-bar {
         .displayFlex;
         justify-content: space-between;
-        width: 48%;
+        width: 52%;
 
         @media @phone {
             width: 80%;
         }
     }
 }
+
+.nav-wrapper {
+    position: fixed;
+    width: 100%;
+  }
