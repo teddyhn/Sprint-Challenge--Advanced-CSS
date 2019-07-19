@@ -1,1 +1,24 @@
 // Navigation code here
+
+.navigation {
+    .displayFlex(column);
+    align-items: center;
+    padding: 15px 0;
+    background-color: @wild-sand;
+    color: @river-bend;
+    border-bottom: 1px solid @sea-shell;
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    .nav-bar {
+        .displayFlex;
+        justify-content: space-between;
+        width: 48%;
+
+        @media @phone {
+            width: 80%;
+        }
+    }
+}
